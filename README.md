@@ -1,46 +1,108 @@
-# mentor-selection
+# 学生选导师系统 (Student Mentor Selection System)
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern web application for managing and facilitating the student mentor selection process. Built with Vue 3, TypeScript, and Vite for optimal performance and developer experience.
+
+## Features
+
+- **Student Dashboard**: Browse and filter available mentors
+- **Mentor Management**: View mentor profiles, specialties, and availability
+- **Selection System**: Intuitive interface for students to submit mentor preferences
+- **Real-time Updates**: Dynamic data synchronization across the application
+- **Responsive Design**: Seamless experience on desktop and mobile devices
+
+## Tech Stack
+
+- **Frontend Framework**: Vue 3
+- **Language**: TypeScript
+- **Build Tool**: Vite
+- **Styling**: CSS
+- **IDE Support**: VSCode with Volar
+
+### Language Composition
+- Vue: 51.3%
+- TypeScript: 39.1%
+- CSS: 8.2%
+- HTML: 1.4%
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- [VSCode](https://code.visualstudio.com/)
+- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur)
+- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
 
 ## Project Setup
+
+### Install Dependencies
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Development
+
+Run the development server with hot-reload:
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+The application will be available at `http://localhost:5173`
+
+### Production Build
+
+Type-check, compile, and minify for production:
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Linting
+
+Check code quality with ESLint:
 
 ```sh
 npm run lint
 ```
+
+## Project Structure
+
+```
+src/
+├── components/        # Reusable Vue components
+├── views/            # Page components
+├── stores/           # State management
+├── types/            # TypeScript type definitions
+├── assets/           # Static assets
+└── App.vue           # Root component
+```
+
+## Usage
+
+1. Start the development server: `npm run dev`
+2. Open your browser and navigate to the local development URL
+3. Browse mentors, view their profiles, and submit your preferences
+4. Build for production: `npm run build`
+
+## Development Notes
+
+### Type Checking
+
+TypeScript type checking uses `vue-tsc` instead of the default `tsc` CLI. This ensures proper type support for `.vue` files.
+
+For faster type checking in your editor, consider enabling Volar's Take Over Mode:
+
+1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+2. Find `TypeScript and JavaScript Language Features` and disable it for this workspace
+3. Reload VSCode with `Developer: Reload Window`
+
+### Configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/) for build and development server customization options.
+
+## License
+
+[Add your license information here]
+
+## Author
+
+liu-shiqiang
